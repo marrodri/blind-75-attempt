@@ -28,5 +28,4 @@ var twoSum = function (nums, target) {
 };
 
 var nums = twoSum([1,2,1], 3);
-
 console.log(nums);
