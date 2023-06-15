@@ -25,30 +25,41 @@ var lengthOfLongestSubstring = function (s) {
   const storedChars = new Map();
   var currLength = 0;
   var longestStringLength = 0;
+  var j = 0;
   for (var i = 0; i < s.length; i++) {
-    /**iterate each character */
     if (storedChars.get(s[i]) === undefined) {
-      //key doesnt exist yet, so increment the counter of the
-      //curr Substr. and add the current character to the hash table
       currLength++;
-      storedChars.set(s[i], 1);
+      storedChars.set(s[i], i);
     } else {
-      //otherwise, it means that the character exists in the substr
-      //already
       /**
-       * check the current length is it higher than the longest
-       * length. If it is, then replace it before reseting the
-       * currLength to 0;
+       * -if the character already exist in the hash table,
+       * return the index of the repeated character and assign it
+       * to the j, incremented by 1.
        *
-       * then restart the current map with a new map.
+       * -Then get the currSubStrLen to be updated as the longestSubStrLen,
+       * if it meets the requirements.
+       *
+       * -then get the diff of j - i; to get the newest currLen.
+       *
        */
+
+      //updating the initial subStr index
+      j = storedChars.get(s[i]) + 1;
+      //setting the repeated character to the newest index on the hash table.
+      storedChars.set(s[i], i);
+
+      //updating the longSubStrLen if needed
       if (currLength >= longestStringLength) {
         longestStringLength = currLength;
       }
-      storedChars.clear();
-      currLength = 1;
-      storedChars.set(s[i], 1);
+
+      //recalculate the current length.
+      currLength = j - i + 1;
     }
+  }
+
+  if (storedChars.length == 1) {
+    return 1;
   }
   if (currLength > longestStringLength) {
     return currLength;
@@ -67,4 +78,5 @@ console.log("lengthOfLongestSubstring: " + len);
  * edge case: "dvdf"
  * your program goes liner and doesnt check whats ahead. Here its just vdf, but its ignored.
  * because after the "dv", it checks "df". Does this needs DP?
+ *
  */
