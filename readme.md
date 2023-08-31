@@ -3,12 +3,16 @@
 
 Link to the Blind 75 Challenges: https://leetcode.com/list/xi4ci4ig/
 
-## About This Repo
+# About This Repo
 
 This personal repository is about my current journey towards the blind 75 challenge.
 For each challenge that I had succesfully finished, will have the check added.
 For certain coding challenges I will be adding my personal insights through out this journey.
+The goal of this repo is to share my answers from my attempt to this blind challenge.
+You can wander around this repo freely, and check the used code for my attempts.
 
+## Note
+You should use this code for learning purposes and not for copy paste. Always be curious with anything you use. **Don't use code or logic without understanding the base concept or idea behind its function!!**
 
 ## Roadmap
 
@@ -22,10 +26,9 @@ For certain coding challenges I will be adding my personal insights through out 
 - [ ] 8. Merge Two Sorted Lists
 - [ ] 9. Merge k Sorted Lists
 - [ ] 10. Search in Rotated Sorted Array
-
+- [ ] **Remaining challenges will be added through time...**
 
 <!-- 
-
 - [ ] 11.
 - [ ] 12.
 - [ ] 13.
@@ -76,6 +79,5 @@ For certain coding challenges I will be adding my personal insights through out 
 - [ ] 58.
 - [ ] 59.
 - [ ] 60.
-
 -->
 
