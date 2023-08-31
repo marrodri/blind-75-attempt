@@ -1,19 +1,20 @@
 
-
-
-Link to the Blind 75 Challenges: https://leetcode.com/list/xi4ci4ig/
-
+<!--About This Repo-->
 # About This Repo
 
 This personal repository is about my current journey towards the blind 75 challenge.
 For each challenge that I had succesfully finished, will have the check added.
 For certain coding challenges I will be adding my personal insights through out this journey.
 The goal of this repo is to share my answers from my attempt to this blind challenge.
-You can wander around this repo freely, and check the used code for my attempts.
+You can wander around this repo freely, and check the code I have used to solve the coding problems.
 
+You can access and try the challenge through this [link](https://leetcode.com/list/xi4ci4ig/)
+
+<!--Usage Note-->
 ## Note
-You should use this code for learning purposes and not for copy paste. Always be curious with anything you use. **Don't use code or logic without understanding the base concept or idea behind its function!!**
+You should use this code for learning purposes and not for copy paste or quick shortcuts. Always be curious with anything you see or use. **Don't use code without understanding the whole logic or main idea!!**
 
+<!--Roadmap-->
 ## Roadmap
 
 - [ ] 1. Two Sum
